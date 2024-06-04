@@ -38,7 +38,7 @@ export default observer (function ActivityDetailedHeader({activity}: Props) {
                                 />
                                 <p>{format(activity.date!, 'dd MMM yyyy')}</p>
                                 <p>
-                                    Hosted by <strong>Bob</strong>
+                                    Hosted by <strong>{activity.host?.displayName}</strong>
                                 </p>
                             </Item.Content>
                         </Item>
